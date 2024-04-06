@@ -1,0 +1,13 @@
+spring:
+  flyway:
+    locations: classpath:migrations
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3307/socks_db
+    user: root
+    password: root
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3307/socks_db
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: validate
